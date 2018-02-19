@@ -2,7 +2,7 @@ title: Jonas Giehl
 description: Software e Tecnologia
 google_analytics: UA-56317011-1
 show_downloads: false
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-so-simple
 
 gems:
   - jekyll-mentions
