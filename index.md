@@ -1,5 +1,4 @@
-## Welcome to GitHub Pages.
-Coordenador de Desenvolvimento Web na Lydians Sistemas de Informação
+## Coordenador de Desenvolvimento Web na Lydians Sistemas de Informação
 
 ### Resumo
 Tenho experiência em análise e desenvolvimento de sistemas de alta disponibilidade com foco em multi-dispositivos, modelagem de bancos de dados relacionais e arquitetura de sistemas. Possuo sólidos conhecimentos em tecnologias de desenvolvimento fron-end, técnicas de cross-browsing, Web Semântica e SEO.
