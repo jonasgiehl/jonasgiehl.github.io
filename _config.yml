@@ -3,6 +3,10 @@ description: Software e Tecnologia
 google_analytics: UA-56317011-1
 show_downloads: false
 remote_theme: "mmistakes/so-simple-theme"
+locale: "pt-br"
+read_time: true
+words_per_minute: 200
+date_format: "%d-%m-%Y"
 
 gems:
 gem "github-pages", group: :jekyll_plugins
