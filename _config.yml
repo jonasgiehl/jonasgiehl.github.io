@@ -8,17 +8,8 @@ read_time: true
 words_per_minute: 200
 date_format: "%d-%m-%Y"
 mathjax: true
-
-twitter:
-  username: jonasgiehl # site's Twitter username
-
-# Build settings
-markdown: kramdown
-feed:
-  path: atom.xml
-  
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
+paginate: 5
 paginate_path: /page:num/
 
 # Search
@@ -27,17 +18,16 @@ search_full_content: false
 # Taxonomoy pages
 category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
+  
+twitter:
+  username: jonasgiehl # site's Twitter username
 
-gems:
-gem "github-pages", group: :jekyll_plugins
-
-plugins:
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-
+# Build settings
+markdown: kramdown
+feed:
+  path: atom.xml
+  
+  
   # Front Matter Defaults
 defaults:
   # Post defaults
@@ -55,8 +45,7 @@ defaults:
     values:
       layout: post
       comments: false
-      share: true
-	  
+      share: true  
   
   # Site Author
 author:
@@ -73,8 +62,7 @@ author:
       icon: fab fa-instagram
     - title: GitHub
       url: https://github.com/jonasgiehl
-      icon: fab fa-github-square
-	  
+      icon: fab fa-github-square	  
 	  
 # Footer Links
 footer_links:
@@ -90,3 +78,13 @@ footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square	  
+
+gems:
+gem "github-pages", group: :jekyll_plugins
+
+plugins:
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate	
