@@ -19,6 +19,8 @@ tags:
 ---
 Você pode gerar um arquivo de log com todas as informações das requisições que o Varnish atendeu em dado momento. O comando é:
 
-<pre>varnishlog -w /caminho/ate/arquivo.log</pre>
+'''
+varnishlog -w /caminho/ate/arquivo.log
+'''
 
 Referência: <https://www.varnish-cache.org/docs/2.1/reference/varnishlog.html>

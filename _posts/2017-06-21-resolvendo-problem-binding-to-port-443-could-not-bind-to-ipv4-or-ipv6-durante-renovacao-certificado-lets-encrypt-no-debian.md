@@ -4,17 +4,12 @@ title: 'Resolvendo &#8220;Problem binding to port 443: Could not bind to IPv4 or
 date: 2017-06-21T20:00:54+00:00
 author: Jonas Giehl
 layout: post
-guid: https://jonas-giehl.com.br/?p=121
 permalink: /resolvendo-problem-binding-to-port-443-could-not-bind-to-ipv4-or-ipv6-durante-renovacao-certificado-lets-encrypt-no-debian/
 categories:
   - Sem categoria
 ---
-Hoje, ao realizar a renovação dos certificados Let&#8217;s Encrypt, estava recebendo a mensagem descrita no título deste post.
+Hoje, ao realizar a renovação dos certificados Let's Encrypt, estava recebendo a mensagem descrita no título deste post.
 
 No meu caso era exibido porque a porta 443 ocupada pelo apache em execução. Criei o GIST abaixo para manter o procedimento de atualização dos certificados que utilizo atualmente.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/jonasgiehl/14e62ed7f969cb693adbcb3e1d00c52b">Gist</a>.
-  </noscript>
-</div>
+{% gist 14e62ed7f969cb693adbcb3e1d00c52b %}

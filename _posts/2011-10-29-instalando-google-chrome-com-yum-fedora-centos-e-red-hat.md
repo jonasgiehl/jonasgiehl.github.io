@@ -4,9 +4,7 @@ title: Instalando Google Chrome com Yum no Fedora, Centos e Red Hat
 date: 2011-10-29T17:11:19+00:00
 author: Jonas Giehl
 layout: post
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?p=24
 permalink: /instalando-google-chrome-com-yum-fedora-centos-e-red-hat/
-image: https://wp.jonas-giehl.com.br/jonas-giehl/wp-content/uploads/sites/3/2011/10/chrome.png
 categories:
   - Fedora
   - Linux
@@ -56,4 +54,4 @@ Agora é só instalar:
   
 yum install google-chrome-stable
 
-Simples não?
+Simples :)
