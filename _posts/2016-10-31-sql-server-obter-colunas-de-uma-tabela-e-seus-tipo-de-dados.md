@@ -15,16 +15,8 @@ tags:
 ---
 Em alguns casos, precisamos obter informações sobre os campos de uma tabela em tempo de execução da aplicação. No SQL Server a consulta abaixo pode ser útil.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/jonasgiehl/bf89a128a1bddef0241b7b0163512fee">Gist</a>.
-  </noscript>
-</div>
+{% gist bf89a128a1bddef0241b7b0163512fee %}
 
 Quando necessário recuperar essas mesmas informações de várias tabelas, o comando abaixo poderá ajudar.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/jonasgiehl/16fe66b1774e7cad8125e5b24056cfc0">Gist</a>.
-  </noscript>
-</div>
+{% gist 16fe66b1774e7cad8125e5b24056cfc0 %}

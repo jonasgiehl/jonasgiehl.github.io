@@ -11,3 +11,6 @@ date_format: "%d-%m-%Y"
 gems:
 gem "github-pages", group: :jekyll_plugins
 
+plugins:
+  - jekyll-gist
+
