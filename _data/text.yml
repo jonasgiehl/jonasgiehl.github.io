@@ -34,6 +34,7 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+  
 pt-BR:
   skip_links: "Pular Links"
   skip_primary_nav: "Skip to primary navigation"
@@ -41,7 +42,7 @@ pt-BR:
   skip_footer: "Skip to footer"
   menu_label: "Menu"
   by: "por"
-  min_read: "minutos "
+  min_read: "minutos de leitura"
   read_more: "Leia mais&hellip;"
   categories: "Categorias"
   tags: "Tags"
@@ -57,5 +58,5 @@ pt-BR:
   older: "Mais antigos"
   back_to_top: "Back to Top"
   search_placeholder_text: "Enter your search term..."
-  powered_by: "Powered by"  
+  powered_by: "Por by"  
   
