@@ -4,7 +4,7 @@ title: Contato
 date: 2014-10-27T21:28:58+00:00
 author: Jonas Giehl
 layout: page
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?page_id=16
+permalink: /contato/
 sharing_disabled:
   - "1"
 ---
