@@ -26,8 +26,7 @@ twitter:
 # Build settings
 markdown: kramdown
 feed:
-  path: atom.xml
-  
+  path: atom.xml  
   
   # Front Matter Defaults
 defaults:
