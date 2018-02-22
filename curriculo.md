@@ -4,7 +4,7 @@ title: Currículo
 date: 2014-10-26T13:25:54+00:00
 author: Jonas Giehl
 layout: page
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?page_id=5
+permalink: /curriculo/
 sharing_disabled:
   - "1"
 ---
