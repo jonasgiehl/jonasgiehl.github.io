@@ -1,13 +1,10 @@
 # Sample site navigation links
 
 - title: Inicio
-  url: /
-  
-- title: Posts
-  url: /posts/
-  
+  url: /  
+#- title: Posts
+#  url: /posts/  
 - title: Curriculo
-  url: /curriculo/  
-  
+  url: /curriculo/    
 - title: Contato
   url: /contato/
