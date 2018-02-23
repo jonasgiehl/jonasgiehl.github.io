@@ -2,7 +2,7 @@ title: Jonas Giehl
 description: Software e Tecnologia
 google_analytics: UA-56317011-1
 show_downloads: false
-remote_theme: "mmistakes/so-simple-theme"
+remote_theme: "jonasgiehl/so-simple-theme"
 locale: "pt-BR"
 read_time: true
 words_per_minute: 200
