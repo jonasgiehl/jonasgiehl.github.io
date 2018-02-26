@@ -4,9 +4,7 @@ title: Validando regras do Varnish
 date: 2011-12-22T02:23:42+00:00
 author: Jonas Giehl
 layout: post
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?p=26
 permalink: /validando-regras-varnish/
-image: https://wp.jonas-giehl.com.br/jonas-giehl/wp-content/uploads/sites/3/2011/12/varnish.png
 categories:
   - Linux
   - Software Livre
