@@ -1,6 +1,6 @@
 ---
 id: 40
-title: 'Corrigindo erro 'This computer can’t connect to the remote computer because the Remote Desktop Gateway server is temporarily unavailable. Try reconnecting later or contact your network administrator for assistance.”'
+title: 'Corrigindo erro "This computer can’t connect to the remote computer because the Remote Desktop Gateway server is temporarily unavailable. Try reconnecting later or contact your network administrator for assistance."'
 date: 2015-03-04T13:44:10+00:00
 author: Jonas Giehl
 layout: post
