@@ -4,9 +4,7 @@ title: Criando um pacote .RPM para NodeJS no Centos 6 x64
 date: 2014-11-12T12:25:13+00:00
 author: Jonas Giehl
 layout: post
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?p=30
 permalink: /criando-um-pacote-rpm-para-nodejs-centos-6-x64/
-image: https://wp.jonas-giehl.com.br/jonas-giehl/wp-content/uploads/sites/3/2014/11/AAEAAQAAAAAAAAh3AAAAJDM3OGVmMjU0LTYyNTYtNDM2ZC05MTRlLThiYTZmYzg1NmQ4NA.png
 categories:
   - Desenvolvimento Web
   - Linux
