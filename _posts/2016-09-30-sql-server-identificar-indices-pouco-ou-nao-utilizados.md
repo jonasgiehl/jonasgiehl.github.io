@@ -4,9 +4,8 @@ title: 'SQL Server &#8211; Identificar índices pouco ou não utilizados'
 date: 2016-09-30T17:17:29+00:00
 author: Jonas Giehl
 layout: post
-guid: http://wp.jonas-giehl.com.br/jonas-giehl/?p=60
 permalink: /sql-server-identificar-indices-pouco-ou-nao-utilizados/
-image: https://wp.jonas-giehl.com.br/jonas-giehl/wp-content/uploads/sites/3/2016/09/sql-spaceused-001.png
+
 categories:
   - Banco de Dados
   - SQL SERVER
