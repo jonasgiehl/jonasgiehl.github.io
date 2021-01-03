@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Banco de Dados &#8211; Jonas Giehl</title>
+	<atom:link href="/category/banco-de-dados/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Software e Tecnologia</description>
+	<lastBuildDate>Sun, 03 Jan 2021 20:31:20 +0000</lastBuildDate>
+	<language>pt-BR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>SQL SERVER &#8211; Obter colunas de uma tabela e seus tipo de dados</title>
+		<link>/sql-server-obter-colunas-de-uma-tabela-e-seus-tipo-de-dados/</link>
+		
+		<dc:creator><![CDATA[Jonas Giehl]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 20:24:45 +0000</pubDate>
+				<category><![CDATA[Banco de Dados]]></category>
+		<category><![CDATA[SQL Server]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=35</guid>
+
+					<description><![CDATA[Em alguns casos, precisamos obter informações sobre os campos de uma tabela em tempo de execução da aplicação. No SQL Server a consulta abaixo pode ser útil. Quando necessário recuperar essas mesmas informações de várias tabelas, o comando abaixo poderá ajudar.]]></description>
+										<content:encoded><![CDATA[
+<p>Em alguns casos, precisamos obter informações sobre os campos de uma tabela em tempo de execução da aplicação. No SQL Server a consulta abaixo pode ser útil.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-incorporar-manipulador wp-block-embed-incorporar-manipulador"><div class="wp-block-embed__wrapper">
+View the code on <a href="https://gist.github.com/jonasgiehl/bf89a128a1bddef0241b7b0163512fee">Gist</a>.
+</div></figure>
+
+
+
+<p>Quando necessário recuperar essas mesmas informações de várias tabelas, o comando abaixo poderá ajudar.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-incorporar-manipulador wp-block-embed-incorporar-manipulador"><div class="wp-block-embed__wrapper">
+View the code on <a href="https://gist.github.com/jonasgiehl/16fe66b1774e7cad8125e5b24056cfc0">Gist</a>.
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>SQL Server – Identificar índices pouco ou não utilizados</title>
+		<link>/sql-server-identificar-indices-pouco-ou-nao-utilizados/</link>
+		
+		<dc:creator><![CDATA[Jonas Giehl]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 20:22:46 +0000</pubDate>
+				<category><![CDATA[Banco de Dados]]></category>
+		<category><![CDATA[SQL Server]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=31</guid>
+
+					<description><![CDATA[Em nossas&#160;bases de dados de produção, com o passar do tempo&#160;de vida da aplicação &#160;e da evolução do software, alguns índices criados para aumentar a performance passam a não faz mais sentido. Em algum momento os mesmos passam a atrapalhar mais do que ajudar, uma vez que os mesmos são afetados por operações de insert/update/delete.&#8230; <a class="more-link" href="/sql-server-identificar-indices-pouco-ou-nao-utilizados/">Continuar lendo <span class="screen-reader-text">SQL Server – Identificar índices pouco ou não utilizados</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Em nossas&nbsp;bases de dados de produção, com o passar do tempo&nbsp;de vida da aplicação &nbsp;e da evolução do software, alguns índices criados para aumentar a performance passam a não faz mais sentido. Em algum momento os mesmos passam a atrapalhar mais do que ajudar, uma vez que os mesmos são afetados por operações de insert/update/delete.</p>
+
+
+
+<p>Baseado no artigo http://imasters.com.br/desenvolvimento/indices-e-o-excesso-de-coisa-boa-parte-02-objetos-sem-uso/ elaborei o gist abaixo para identificar os índices menos utilizados. No meu caso, optei por remover índices do ixratio menor que 1.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-incorporar-manipulador wp-block-embed-incorporar-manipulador"><div class="wp-block-embed__wrapper">
+View the code on <a href="https://gist.github.com/jonasgiehl/0377e7d0776454f87ab6b11476a3f545">Gist</a>.
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

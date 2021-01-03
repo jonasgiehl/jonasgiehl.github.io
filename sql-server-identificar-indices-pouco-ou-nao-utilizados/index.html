@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Jonas Giehl &#8211; Software e Tecnologia</title>
+	<title>SQL Server – Identificar índices pouco ou não utilizados &#8211; Jonas Giehl</title>
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Feed para Jonas Giehl &raquo;" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Jonas Giehl &raquo;" href="/comments/feed/" />
@@ -32,15 +32,19 @@ img.emoji {
 :root{--global--color-background: #5b5975;--global--color-primary: #fff;--global--color-secondary: #fff;--button--color-background: #fff;--button--color-text-hover: #fff;--table--stripes-border-color: rgba(240, 240, 240, 0.15);--table--stripes-background-color: rgba(240, 240, 240, 0.15);}
 </style>
 <link rel='stylesheet' id='twenty-twenty-one-print-style-css'  href='/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.1' media='print' />
-<link rel="https://api.w.org/" href="/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/31" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.6" />
+<link rel="canonical" href="/sql-server-identificar-indices-pouco-ou-nao-utilizados/" />
+<link rel='shortlink' href='/?p=31' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fsql-server-identificar-indices-pouco-ou-nao-utilizados%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fsql-server-identificar-indices-pouco-ou-nao-utilizados%2F&#038;format=xml" />
 <style id="custom-background-css">
 body.custom-background { background-color: #5b5975; }
 </style>
 	</head>
 
-<body class="home blog custom-background wp-embed-responsive is-dark-theme no-js hfeed has-main-navigation no-widgets">
+<body class="post-template-default single single-post postid-31 single-format-standard custom-background wp-embed-responsive is-dark-theme no-js singular has-main-navigation no-widgets">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Pular para o conteúdo</a>
 
@@ -52,7 +56,7 @@ body.custom-background { background-color: #5b5975; }
 <div class="site-branding">
 
 	
-						<h1 class="site-title">Jonas Giehl</h1>
+						<p class="site-title"><a href="/">Jonas Giehl</a></p>
 			
 			<p class="site-description">
 			Software e Tecnologia		</p>
@@ -65,7 +69,7 @@ body.custom-background { background-color: #5b5975; }
 				<span class="dropdown-icon close">Fechar					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.9394L5.53033 4.46973L4.46967 5.53039L10.9393 12.0001L4.46967 18.4697L5.53033 19.5304L12 13.0607L18.4697 19.5304L19.5303 18.4697L13.0607 12.0001L19.5303 5.53039L18.4697 4.46973L12 10.9394Z" fill="currentColor"/></svg>				</span>
 			</button><!-- #primary-mobile-menu -->
 		</div><!-- .menu-button-container -->
-		<div class="primary-menu-container"><ul id="primary-menu-list" class="menu-wrapper"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-5"><a href="/" aria-current="page">Início</a></li>
+		<div class="primary-menu-container"><ul id="primary-menu-list" class="menu-wrapper"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5"><a href="/">Início</a></li>
 <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="/sobre/">Sobre</a></li>
 </ul></div>	</nav><!-- #site-navigation -->
 
@@ -75,48 +79,36 @@ body.custom-background { background-color: #5b5975; }
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
-<article id="post-43" class="post-43 post type-post status-publish format-standard hentry category-apache category-infraestrutura category-ssl entry">
-
-	
-<header class="entry-header">
-	<h2 class="entry-title default-max-width"><a href="/resolvendo-problem-binding-to-port-443-could-not-bind-to-ipv4-or-ipv6-durante-renovacao-certificado-lets-encrypt-no-debian/">Resolvendo “Problem binding to port 443: Could not bind to IPv4 or IPv6” durante renovação certificado Let’s Encrypt no Debian</a></h2></header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>Hoje, ao realizar a renovação dos certificados Let’s Encrypt, estava recebendo a mensagem descrita no título deste post. No meu caso era exibido porque a porta 443 ocupada pelo apache em execução. Criei o GIST abaixo para manter o procedimento de atualização dos certificados que utilizo atualmente.</p>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer default-max-width">
-		<span class="posted-on"><time class="entry-date published updated" datetime="2021-01-03T17:33:44-03:00">03/01/2021</time> publicado</span><div class="post-taxonomies"><span class="cat-links">Categorizado como <a href="/category/infraestrutura/apache/" rel="category tag">Apache</a>, <a href="/category/infraestrutura/" rel="category tag">Infraestrutura</a>, <a href="/category/infraestrutura/ssl/" rel="category tag">SSL</a> </span></div>	</footer><!-- .entry-footer -->
-</article><!-- #post-${ID} -->
-
-<article id="post-35" class="post-35 post type-post status-publish format-standard hentry category-banco-de-dados category-sql-server category-uncategorized entry">
-
-	
-<header class="entry-header">
-	<h2 class="entry-title default-max-width"><a href="/sql-server-obter-colunas-de-uma-tabela-e-seus-tipo-de-dados/">SQL SERVER &#8211; Obter colunas de uma tabela e seus tipo de dados</a></h2></header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>Em alguns casos, precisamos obter informações sobre os campos de uma tabela em tempo de execução da aplicação. No SQL Server a consulta abaixo pode ser útil. Quando necessário recuperar essas mesmas informações de várias tabelas, o comando abaixo poderá ajudar.</p>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer default-max-width">
-		<span class="posted-on"><time class="entry-date published updated" datetime="2021-01-03T17:24:45-03:00">03/01/2021</time> publicado</span><div class="post-taxonomies"><span class="cat-links">Categorizado como <a href="/category/banco-de-dados/" rel="category tag">Banco de Dados</a>, <a href="/category/banco-de-dados/sql-server/" rel="category tag">SQL Server</a>, <a href="/category/uncategorized/" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
-</article><!-- #post-${ID} -->
-
 <article id="post-31" class="post-31 post type-post status-publish format-standard hentry category-banco-de-dados category-sql-server category-uncategorized entry">
 
-	
-<header class="entry-header">
-	<h2 class="entry-title default-max-width"><a href="/sql-server-identificar-indices-pouco-ou-nao-utilizados/">SQL Server – Identificar índices pouco ou não utilizados</a></h2></header><!-- .entry-header -->
+	<header class="entry-header alignwide">
+		<h1 class="entry-title">SQL Server – Identificar índices pouco ou não utilizados</h1>			</header>
 
 	<div class="entry-content">
-		<p>Em nossas&nbsp;bases de dados de produção, com o passar do tempo&nbsp;de vida da aplicação &nbsp;e da evolução do software, alguns índices criados para aumentar a performance passam a não faz mais sentido. Em algum momento os mesmos passam a atrapalhar mais do que ajudar, uma vez que os mesmos são afetados por operações de insert/update/delete.&hellip; <a class="more-link" href="/sql-server-identificar-indices-pouco-ou-nao-utilizados/">Continuar lendo <span class="screen-reader-text">SQL Server – Identificar índices pouco ou não utilizados</span></a></p>
+		
+<p>Em nossas&nbsp;bases de dados de produção, com o passar do tempo&nbsp;de vida da aplicação &nbsp;e da evolução do software, alguns índices criados para aumentar a performance passam a não faz mais sentido. Em algum momento os mesmos passam a atrapalhar mais do que ajudar, uma vez que os mesmos são afetados por operações de insert/update/delete.</p>
+
+
+
+<p>Baseado no artigo http://imasters.com.br/desenvolvimento/indices-e-o-excesso-de-coisa-boa-parte-02-objetos-sem-uso/ elaborei o gist abaixo para identificar os índices menos utilizados. No meu caso, optei por remover índices do ixratio menor que 1.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-incorporar-manipulador wp-block-embed-incorporar-manipulador"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/jonasgiehl/0377e7d0776454f87ab6b11476a3f545.js"></script><noscript>View the code on <a href="https://gist.github.com/jonasgiehl/0377e7d0776454f87ab6b11476a3f545">Gist</a>.</noscript></div>
+</div></figure>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer default-max-width">
-		<span class="posted-on"><time class="entry-date published updated" datetime="2021-01-03T17:22:46-03:00">03/01/2021</time> publicado</span><div class="post-taxonomies"><span class="cat-links">Categorizado como <a href="/category/banco-de-dados/" rel="category tag">Banco de Dados</a>, <a href="/category/banco-de-dados/sql-server/" rel="category tag">SQL Server</a>, <a href="/category/uncategorized/" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
-</article><!-- #post-${ID} -->
-			</main><!-- #main -->
+		<div class="posted-by"><span class="posted-on"><time class="entry-date published updated" datetime="2021-01-03T17:22:46-03:00">03/01/2021</time> publicado</span><span class="byline">Por <a href="/author/jonasgiehl/" rel="author">Jonas Giehl</a></span></div><div class="post-taxonomies"><span class="cat-links">Categorizado como <a href="/category/banco-de-dados/" rel="category tag">Banco de Dados</a>, <a href="/category/banco-de-dados/sql-server/" rel="category tag">SQL Server</a>, <a href="/category/uncategorized/" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
+
+				
+</article><!-- #post-31 -->
+
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Navegação de Post</h2>
+		<div class="nav-links"><div class="nav-next"><a href="/sql-server-obter-colunas-de-uma-tabela-e-seus-tipo-de-dados/" rel="next"><p class="meta-nav">Next post<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m4 13v-2h12l-4-4 1-2 7 7-7 7-1-2 4-4z" fill="currentColor"/></svg></p><p class="post-title">SQL SERVER &#8211; Obter colunas de uma tabela e seus tipo de dados</p></a></div></div>
+	</nav>			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
 
@@ -133,7 +125,8 @@ body.custom-background { background-color: #5b5975; }
 			</nav><!-- .footer-navigation -->
 				<div class="site-info">
 			<div class="site-name">
-																						Jonas Giehl																		</div><!-- .site-name -->
+																						<a href="/">Jonas Giehl</a>
+																		</div><!-- .site-name -->
 			<div class="powered-by">
 				Orgulhosamente desenvolvido com <a href="https://br.wordpress.org/">WordPress</a>.			</div><!-- .powered-by -->
 
@@ -153,6 +146,7 @@ body.custom-background { background-color: #5b5975; }
 <script src='/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.1' id='twenty-twenty-one-primary-navigation-script-js'></script>
 <script src='/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.1' id='twenty-twenty-one-responsive-embeds-script-js'></script>
 <script src='/wp-includes/js/wp-embed.min.js?ver=5.6' id='wp-embed-js'></script>
+<script src='/wp-content/plugins/oembed-gist/js/script.min.js?ver=4.9.1' id='oembed-gist-js'></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
 	</script>

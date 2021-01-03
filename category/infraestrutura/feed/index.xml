@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Infraestrutura &#8211; Jonas Giehl</title>
+	<atom:link href="/category/infraestrutura/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Software e Tecnologia</description>
+	<lastBuildDate>Sun, 03 Jan 2021 20:33:44 +0000</lastBuildDate>
+	<language>pt-BR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Resolvendo “Problem binding to port 443: Could not bind to IPv4 or IPv6” durante renovação certificado Let’s Encrypt no Debian</title>
+		<link>/resolvendo-problem-binding-to-port-443-could-not-bind-to-ipv4-or-ipv6-durante-renovacao-certificado-lets-encrypt-no-debian/</link>
+		
+		<dc:creator><![CDATA[Jonas Giehl]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 20:33:44 +0000</pubDate>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Infraestrutura]]></category>
+		<category><![CDATA[SSL]]></category>
+		<guid isPermaLink="false">/?p=43</guid>
+
+					<description><![CDATA[Hoje, ao realizar a renovação dos certificados Let’s Encrypt, estava recebendo a mensagem descrita no título deste post. No meu caso era exibido porque a porta 443 ocupada pelo apache em execução. Criei o GIST abaixo para manter o procedimento de atualização dos certificados que utilizo atualmente.]]></description>
+										<content:encoded><![CDATA[
+<p>Hoje, ao realizar a renovação dos certificados Let’s Encrypt, estava recebendo a mensagem descrita no título deste post.</p>
+
+
+
+<p>No meu caso era exibido porque a porta 443 ocupada pelo apache em execução. Criei o GIST abaixo para manter o procedimento de atualização dos certificados que utilizo atualmente.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-incorporar-manipulador wp-block-embed-incorporar-manipulador"><div class="wp-block-embed__wrapper">
+View the code on <a href="https://gist.github.com/jonasgiehl/14e62ed7f969cb693adbcb3e1d00c52b">Gist</a>.
+</div></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
